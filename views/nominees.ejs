@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <% include ./partials/head %>
+    </head>
+
+    <body>
+    <header>
+        <% include ./partials/header %>
+
+                      
+<p id="static" >  <img class="img-fluid" src="/images/banner.jpg" alt="Second slide" style="width:100%">
+</p>
+    </header>
+    <div><% include ./partials/nav %></div>
+    <div class="jumbotron nomdiv">
+        <div class="row justify-content-center ">
+            <div class="col-sm-8 ">
+              <h5> Nominees according to Categories</h5>
+                <div class="accordion polaroid" id="accordionExample">
+                             
+             
+                    <% for(let b=0; b< nomineedata.length; b++){%>
+                    <div class="card accordiondiv">
+                      <div class="card-header " id="headingOne">
+
+                        <h5 class="mb-0">
+                          <button class="btn btn-link btn-block cardheader" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                         <h5>  <%= nomineedata[b]._id %></h5> 
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body" id="carddiv">
+                          <%= nomineedata[b].stagename %>
+                        </div>
+                      </div>
+                    </div>
+                   <% }%>
+                  </div>
+            </div>
+         
+            </div>
+            
+        </div>
+       
+    <div style="margin-top:4em;">
+      <% include ./partials/footer %>
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  
+    </body>
+    </html>

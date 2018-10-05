@@ -1,0 +1,395 @@
+ 
+ /* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+
+ @font-face {
+     font-family: "Nowadays Regular";
+     src: url("mywebfonts/Nowadays_Regular.eot?") format("eot"), 
+     url("mywebfonts/Nowadays_Regular.woff") format("woff"), 
+     url("mywebfonts/Nowadays_Regular.ttf") format("truetype"), 
+     url("mywebfonts/Nowadays_Regular.svg#Nowadays") format("svg");
+     font-weight: bold;
+     font-style: normal;
+ }
+
+
+ body, html {
+  background-color:	black;
+  color:gold;
+  height: 100%;
+}
+
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 3px;
+  background-color:gold;
+  color:gold;
+}
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+ .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: 450px}
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+  #category{
+    margin-top:1em;
+  }
+  
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  height:5%;
+    text-align: center;
+}
+#toprow{
+  margin-top:0.5em;
+  margin-bottom: 0.5em;
+  ;
+}
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+ }
+.nomlist{
+  background-color:	#f4e6c2;
+  color:black;
+  text-transform:capitalize;
+  font-size:0.9em;
+  font-style: bold;
+  font-stretch: wider;
+  margin-bottom:-0.8em;
+}
+.nomlist1{
+  background-color:	#f8eed6;
+  color:black;
+  text-transform: Initial;
+  font-size:0.9em;
+  font-style: bold;
+  font-stretch: wider;
+  margin-bottom:-0.8em;
+}
+.nomdiv{
+  background-color:transparent;
+  
+}
+.accordiondiv{
+  background-color: #e4bd5c;
+ }
+.cardheader{
+  text-decoration: none;
+  color: black;
+
+}
+.carddiv{
+  background-color: #f8eed6;
+  color:	#4f3c0b;
+  
+}
+.btn-link{
+  text-decoration: none !important;
+}
+.btn-link:hover{
+color:black !important;
+}
+.polaroid {
+
+    padding: 5px 5px 3px 5px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+ #rectanglediv{
+ /* border: 1px solid;*/
+  padding: 10px;
+  box-shadow: 5px 10px 	#634b0e;
+ }
+
+ #awardsdiv{
+  padding: 10px;
+  box-shadow: 5px 10px 	#e0b548	;
+  
+ }
+.parallax {
+  /* The image used */
+  background-image: url("/images/imgparallax.jpg");
+
+  /* Full height */
+  height: 100%; 
+  opacity:0.5;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#loginbody{
+  background-color: #634b0e;
+
+}
+.butt-class{
+  background-color: goldenrod !important;
+}
+  .recdiv{
+    background-color:#3b2d08;
+    margin-left:2em;
+    
+  }
+  #title{
+    text-transform: initial;
+    font-size: 90%;
+    margin-left:5em;
+  }
+  .adiv{
+    background-color: 	#9e7817;
+    margin-left:2em;
+   
+  }
+
+#boxdiv{
+  
+    box-shadow: 5px 5px 2px #9e7817;
+    background-color:#e4bd5c;
+}
+  #carddiv{
+font-size:85%;
+text-transform: capitalize;
+color:black;
+  }
+ .footer{
+    z-index:1000;
+    margin-bottom:0 !important;
+    padding-bottom:0 !important;
+    text-transform: initial;
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    width: 100%;
+    height:7%;
+    color: white;
+    background-color: #765a11	;
+  }
+
+ 
+  fieldset.scheduler-border {
+    
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+    legend.scheduler-border {
+     
+        font-size: 1.2em !important;
+        font-weight: bold !important;
+        text-align: left !important;
+        width:auto;
+        padding:0 10px;
+        border-bottom:none;
+    }
+    .legend{
+      margin-top:2em;
+      text-transform: initial;
+      font-size:1em;
+      text-align: justify;
+      color:	#f8eed6;
+    }
+    .ullegend{
+      margin-top:2em;
+     
+      text-transform: initial;
+      font-size:1em;
+      text-align: justify;
+      color:	#f8eed6;
+    }
+    .handles{
+      margin-top:2.5em;
+      background-color:#634b0e;
+      padding-left:0.5em;
+    }
+
+    .footerhandles{
+      margin-top:2.5em;
+      background-color:#765a11;
+      margin-right:15em;
+      color:	#f8eed6;
+      text-align: right;
+    }
+
+#login
+{
+    margin-top: 20vh;
+    font-family:"Times New Roman";
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 400px;
+   line-height: 20px;
+   width:50vh;
+}
+
+.adminlogo
+{
+  margin-top: 5vh;
+      width:5vh;
+    height:5vh;
+   
+    display: table-cell;
+    
+}
+
+.topnav{
+  margin-top: 5vh;
+  margin-right: 15vh;
+  font-size: 1.8vh;
+  
+}
+
+.winners{
+  margin-top:4em;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+/*input[type =text] {
+  width:95%;
+  padding:10px 20px;
+  padding-bottom: 0px;
+   margin: 8px 0;
+  border:none;
+ border-bottom: 2px #F8F8F8;
+ 
+ }*/
+ .songs{
+   text-transform:initial;
+   font-weight:bold;
+ }
+ .topnav {
+  margin-top: 0.5em;
+  margin-right: 15vh;
+  font-size: 1em;
+  font-weight:bold;
+ 
+ 
+}
+.topnav a{
+  text-decoration: none;
+  
+  color:goldenrod;
+}
+
+.topnav a:hover{
+  text-decoration: none;
+  
+  color:#3b2d08;
+}
+
+.topnav a:visited{
+  text-decoration: none;
+  
+  color:black;
+}
+ .alert-error
+ {
+   color:#a94442;
+   background-color: #f2dede;
+   border-color: #ebccd1;
+ }
+ .alert-success
+ {
+   color:#3c763d;
+   background-color: #dff0d8;
+   border-color: #d6e9c6;
+ }
+ 
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#formdiv{
+ 
+  border-radius: 0.938em;
+
+  padding: 1.25em; 
+  width: 16.667;
+ 
+  background-color:	#f1dead;
+   color:#271e05; 
+   margin-top:1.5em;
+  
+}
+#formtext{
+  text-transform: initial;
+  height:20em;
+  overflow-y: auto;
+}
+#row1{
+  background-color:	#e7c571;
+  margin-top:0.5em;
+  padding:0.3em 1em;
+}
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+        .row.content {height:auto;} 
+        
+.custom-collapse .collapse{
+  display:block;
+}  
+
+.recdiv{
+ 
+  margin-left:0em;
+}
+#book{
+  display:none;
+}
+      }

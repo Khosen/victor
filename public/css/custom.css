@@ -1,0 +1,78 @@
+
+/* change the background color */
+
+.dropdown .dropdown-menu a:hover
+{
+  color: #3b2d08;
+  background-color: #eed699;
+ 
+}
+.dropdown .dropdown-menu a{color: #f8eed6; 
+    text-decoration: none;
+    font-weight: bold;
+
+
+}
+
+
+.dropdown .dropdown-menu
+{
+  color: #eed699;
+  background-color: black;
+ 
+}
+.navbar-custom {
+    background-color: black;
+}
+.navigation {        
+    margin-right: auto;    
+     
+    width: 100%;    
+    max-width: 100%;    
+    
+  }
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: goldenrod;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+/* change the link color and add padding for height */
+.navbar-custom .navbar-nav .nav-link {
+    color: goldenrod;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+    background-color:#b2871a	; 
+    font-weight: bold;/* add background-color to active links */
+}
+
+.btn-primary{
+    background-color: 	#e0b548!important;
+
+}
+.site-footer-bottom{
+    background-color: #765a11 !important;
+}
+.close{
+    width:2em;
+}
+.modal-body{
+    height:25em;
+    overflow-y: auto;
+}
+.fa{
+    color:gold;
+}
+@media screen and (min-width: 768px) {
+    
+    .custom-collapse .collapse{
+                display:block;
+          }  
+    }
