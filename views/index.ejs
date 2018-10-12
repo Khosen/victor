@@ -99,11 +99,12 @@
                    
                    <h6>and our Nominees are...</h6> 
                    
-            <% for (let x=0; x < 4; x++)  {%>
+            <% for (let x=0; x < artiste.length; x++)  {%>
               
                    <ul class="list-group">
                     <li class="list-group-item nomlist">
-                    <p style="font-weight: bold;margin-top:-0.2em; margin-bottom:-0.2em">  <%=artiste[x].stagename %> </p>
+                    <p style="font-weight: bold;margin-top:-0.2em; margin-bottom:-0.2em"> 
+                       <%=artiste[x].stagename %> </p>
                      <div class="row">
                       <div class="col"><strong>Tracktitle :</strong> <%=artiste[x].tracktitle%></div>
                       <div class="w-100"></div>
@@ -119,7 +120,7 @@
                   </div>
                 
                   <div class="col-sm-3 recdiv"  id="rectanglediv" >
-                      <h6>meet our Featured artistes</h6> 
+                      <h6>Featured artistes</h6> 
                     
                           <div class="card ">
                             <img class="card-img-top" src="/images/logo.jpg" alt="Card image cap">

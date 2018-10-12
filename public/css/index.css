@@ -160,6 +160,7 @@ color:black !important;
 .butt-class{
   background-color: goldenrod !important;
 }
+
   .recdiv{
     background-color:#3b2d08;
     margin-left:2em;
@@ -275,6 +276,9 @@ color:black;
   font-size: 1.8vh;
   
 }
+#sponsors{
+  margin:1em;
+}
 
 .winners{
   margin-top:4em;
@@ -294,15 +298,9 @@ button {
 button:hover {
   opacity:1;
 }
-/*input[type =text] {
-  width:95%;
-  padding:10px 20px;
-  padding-bottom: 0px;
-   margin: 8px 0;
-  border:none;
- border-bottom: 2px #F8F8F8;
- 
- }*/
+.btn {
+  white-space: normal;
+}
  .songs{
    text-transform:initial;
    font-weight:bold;
@@ -313,7 +311,20 @@ button:hover {
   font-size: 1em;
   font-weight:bold;
  
- 
+}
+
+.sponsorlogo{
+  height: 6vw;
+  width:12vw;
+  margin:0.2em 0.5em;
+  
+  display:inline-block;
+} 
+
+.sponsorimage{
+  height:6vw;
+  width:12vw;
+    display:inline-block;
 }
 .topnav a{
   text-decoration: none;
@@ -356,12 +367,15 @@ button:hover {
   border-radius: 0.938em;
 
   padding: 1.25em; 
-  width: 16.667;
- 
+  width: 80%;
+
   background-color:	#f1dead;
    color:#271e05; 
    margin-top:1.5em;
   
+}
+#nomcol{
+  padding:2em;
 }
 #formtext{
   text-transform: initial;
@@ -392,4 +406,26 @@ button:hover {
 #book{
   display:none;
 }
-      }
+#nomcol{
+  width:100%
+}
+.btnsize{
+  font-size:70%
+}
+#sponsors{
+  display:inline-block;
+ 
+}
+
+.sponsorlogo{
+  display:inline-block;
+  margin-right:0.5em
+}
+
+#footernote{
+  font-size:65%;
+}
+
+  }
+
+ 
