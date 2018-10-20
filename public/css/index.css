@@ -130,8 +130,9 @@ color:black !important;
 }
  #rectanglediv{
  /* border: 1px solid;*/
-  padding: 10px;
+  padding: 5px;
   box-shadow: 5px 10px 	#634b0e;
+  margin-bottom:-0.5em;
  }
 
  #awardsdiv{
@@ -224,7 +225,7 @@ color:black;
       margin-top:2em;
       text-transform: initial;
       font-size:1em;
-      text-align: justify;
+      text-align: left;
       color:	#f8eed6;
     }
     .ullegend{
@@ -232,11 +233,11 @@ color:black;
      
       text-transform: initial;
       font-size:1em;
-      text-align: justify;
+      text-align: left;
       color:	#f8eed6;
     }
     .handles{
-      margin-top:2.5em;
+      margin-top:1.5em;
       background-color:#634b0e;
       padding-left:0.5em;
     }
@@ -259,7 +260,11 @@ color:black;
    line-height: 20px;
    width:50vh;
 }
-
+.blinktext{
+  margin-top:2em;
+  text-align:left;
+  text-transform: initial;
+}
 .adminlogo
 {
   margin-top: 5vh;
@@ -315,7 +320,7 @@ button:hover {
 
 .sponsorlogo{
   height: 6vw;
-  width:12vw;
+  width:6vw;
   margin:0.2em 0.5em;
   
   display:inline-block;
@@ -323,7 +328,7 @@ button:hover {
 
 .sponsorimage{
   height:6vw;
-  width:12vw;
+  width:6vw;
     display:inline-block;
 }
 .topnav a{
@@ -377,16 +382,51 @@ button:hover {
 #nomcol{
   padding:2em;
 }
+
 #formtext{
   text-transform: initial;
   height:20em;
   overflow-y: auto;
 }
+#sponsortext{
+  text-transform: initial;
+  height:20em;
+  text-align: justify;
+   word-spacing: normal;
+    overflow-y: auto;
+    }
+
+#sponsorcol{
+  text-transform: initial;
+  text-align:justify;
+}
+
 #row1{
   background-color:	#e7c571;
   margin-top:0.5em;
   padding:0.3em 1em;
 }
+
+#sponsorrow{
+  background-color:	#e7c571;
+  margin-top:0.5em;
+  padding-top:0.3em;
+  padding-left:5em;
+}
+
+.blink{
+   text-decoration:none; 
+  color:gold  ;
+  font-weight: bold;
+  animation: blink 1s infinite;
+ }
+ 
+ @keyframes blink{
+  0%{opacity: 1;}
+  75%{opacity: 1;}
+  76%{ opacity: 0;}
+  100%{opacity: 0;}
+ }
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
         .sidenav {
@@ -414,16 +454,27 @@ button:hover {
 }
 #sponsors{
   display:inline-block;
- 
-}
+ }
 
 .sponsorlogo{
   display:inline-block;
   margin-right:0.5em
 }
-
+.addressdiv{
+ font-size:83%
+}
 #footernote{
   font-size:65%;
+}
+#sponsorcol{
+  font-size: 80%;
+ margin-right:-6em;
+
+}
+
+#sponsorrow{
+  padding-left:0em;
+  overflow-x: auto;
 }
 
   }

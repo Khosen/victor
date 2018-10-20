@@ -15,13 +15,51 @@
 <div class="container-fluid">
 <div class="page-header" style="background-color:black" >
 <div class="row ">
-<div class="col-8 "> <h1>
- <a> <img src="/images/logo.jpg" class="img-fluid responsive" alt="logo"></a>
-                     
+<div class="col-4" style="margin-top:1em;"> <h1>
+ <a> <img src="/images/logonew.png" class="img-fluid responsive" alt="logo"></a>
+             
 </h1>
 
 </div>
+<div class="col-2" style="margin-top:2em">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-8930960923743685",
+        enable_page_level_ads: true
+      });
+    </script>
 
+</div>
+<div class="col-4 blinktext">
+    <div class="row">
+       <h6 class="blink"><a href="/pages/sponsor" style="text-decoration:none; color:gold"><i class="fa fa-hand-o-right fa-lg "></i> 
+       Become a SPONSOR</a></h6>
+     </div> 
+     </div>
+
+     <div class="col-2">
+        <div class="row">
+          <div class="" style="margin-top:2em;">
+            <p>
+            <a href="https://www.facebook.com/AbujaPopMusicAward" target="_blank" style="text-decoration:none;">
+               <i class="fa fa-facebook fa-lg m-2" ></i>
+             </a>
+             <a href="https://www.instagram.com/abujapopmusicawards" target="_blank" style="text-decoration:none;">
+             
+             <i class="fa fa-instagram fa-lg m-2" ></i>
+             </a>
+             <a href="https://twitter.com/AbujaPop" style="text-decoration:none;" target="_blank">
+               <i class="fa fa-twitter fa-lg m-2" ></i>
+           </a>
+           <a href="/pages/contact" target="_blank" style="text-decoration:none;">
+            
+           <i class="fa fa-envelope-o fa-lg m-2" ></i>
+           </a>
+            </p>
+          </div>
+        </div>
+      </div>
 </div>
 </div>
 </div>
@@ -33,9 +71,7 @@
 <div class="container-fluid" id="toprow">
 <div class="row justify-content-center align-content-center">
 <div class="col-12">
-  <div><% include ./partials/nav %></div>
   
-       
 </div>
 </div>
 <div class="row justify-content-center align-content-center"  style="margin-top:0.5em;">
@@ -45,13 +81,16 @@
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="/images/img2.jpg" alt="First slide">
+            <img class="d-block w-100" src="/images/banner.png" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/images/img2.jpg" alt="Second slide">
+            <img class="d-block w-100" src="/images/banner2.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/images/img2.jpg" alt="Third slide">
+            <img class="d-block w-100" src="/images/banner3.png" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/images/banner4.png" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -73,23 +112,30 @@
       <div class="row justify-content-center align-content-center" style="margin-top:2em">
           <div class="col-10">
               <div class="row justify-content-center align-content-center">
-                
-                    <div class=" col-md-auto" style="background-color:goldenrod;">
-                        <h2>Red carpet</h2></div>
-                    <div class="col" style="background-color:wheat;">
-                        Variable width content
-                      </div>
-                </div>
+                                      
+                    <img class="card-img" src="/images/redcarpet.png" alt="Card image">
+                   </div>
           </div>
       </div>
 
       <div class="row justify-content-center align-content-center" style="margin-top:2em;">
           <div class="col-10">
           <div class="row">
-            <div class="co-2">
-                 <a class="btn btn-primary" href="/users/form">Submit song</a>
+            <div class="" >
+                 <a class="btn btn-primary" href="/pages/form">Nominate here</a>
             </div>
-             </div>
+            <div class="col-6" style=" text-align:center; margin-left:1em">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({
+                    google_ad_client: "ca-pub-8930960923743685",
+                    enable_page_level_ads: true
+                  });
+                </script>
+      
+            </div>
+            
+            </div>
             </div>
             </div>
         <div class="row justify-content-center align-content-center" style="margin-top:5em;">
@@ -97,25 +143,11 @@
             <div class="row">
                 <div class="col-sm-3 recdiv" id="rectanglediv" >
                    
-                   <h6>and our Nominees are...</h6> 
-                   
-            <% for (let x=0; x < artiste.length; x++)  {%>
+                   <h6>Entries</h6> 
               
                    <ul class="list-group">
                     <li class="list-group-item nomlist">
                     <p style="font-weight: bold;margin-top:-0.2em; margin-bottom:-0.2em"> 
-                       <%=artiste[x].stagename %> </p>
-                     <div class="row">
-                      <div class="col"><strong>Tracktitle :</strong> <%=artiste[x].tracktitle%></div>
-                      <div class="w-100"></div>
-                      <div class="col"><strong>Category: </strong> <%=artiste[x].category%></div>
-                     </div>
-                      </li>
-                       <%} %> 
-                    <li class="list-group-item nomlist1" >
-                      <a href="/users/nominees" style="text-decoration:none; color:black;font-weight:bold">... click for more</a>
-                    </li>
-                  </ul>  
                    
                   </div>
                 
@@ -123,11 +155,11 @@
                       <h6>Featured artistes</h6> 
                     
                           <div class="card ">
-                            <img class="card-img-top" src="/images/logo.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title that wr</h5>
+                        <a href="">    <img class="card-img-top" src="/images/featured1.png" alt="Card image cap"></a>
+                           <!--   <div class="card-body">
+                            <h5 class="card-title">Card title that wr</h5>
                               <p class="card-text">This is a ittle bit longer.</p>
-                            </div>
+                            </div>-->
                           </div>
                           </div>
                         
@@ -136,21 +168,24 @@
                       <h6> Videos </h6>
 
                       <div class="embed-responsive embed-responsive-16by9">
-                          <iframe class="embed-responsive-item" 
-                          src="/video/video.mp4" allowfullscreen></iframe>
-                        
+                    <!--     <iframe class="embed-responsive-item" src="/video/video.mp4?rel=0"   allowfullscreen></iframe>-->
+                         
+                         <video class="embed-responsive-item" controls preload="none">
+                          <source  src="/video/video.mp4"  type="video/mp4">
+                          </video>                      
+                     
                         </div>
                        <div class="handles">
-                        <p><p> our handles</p>
-                        <a href="" target="_blank">
+                        <p> our handles</p>
+                       <p style="margin-top:-0.5em"> <a href="https://www.facebook.com/AbujaPopMusicAward" target="_blank">
                           
-                         <i class="fa fa-facebook fa-lg m-2" href="" ></i>
+                         <i class="fa fa-facebook fa-lg m-2"></i>
                          </a>
-                         <a href="" target="_blank">
+                         <a href="https://www.instagram.com/abujapopmusicawards" target="_blank">
                          
                          <i class="fa fa-instagram fa-lg m-2" href=""></i>
                          </a>
-                         <a href="https://l.facebook.com/l.php?u=http%3A%2F%2Ftwitter.com%2FAbujaPop&h=AT1BK--IhBZGWBXX1HyVrYue7PpANPIrOIFa_8rbys6r8olJj2KhVYHnY5kFokYFUO0abfMkiJ5WmXiRH-zbPQ9DXPnqgloSHh2L4nngTkfjPwWyPm_3UiqSZ2RSfj5q7w" target="_blank">
+                         <a href="https://twitter.com/AbujaPop" target="_blank">
                            <i class="fa fa-twitter fa-lg m-2" ></i>
                        </a>
                         </p>
@@ -169,31 +204,20 @@
                     <div class="col-sm-3 adiv" id="awardsdiv" >
                        
                        <h6> ... and the winners are</h6> 
-                           
+                       <a href="">    <img class="card-img-top" src="/images/winners.png" alt="Card image cap"></a>
+                       
                       </div>
                    
                         
                       <div class="col-sm-3 adiv"  id="awardsdiv" >
-                          <h6> Award Categories</h6> 
-                          <% for (let y=0; y < category.length; y++)  {%>
-                          <ul class="list-group">
-                            <li class="list-group-item nomlist">
-                            <p style="font-weight: bold;margin-top:-0.2em; margin-bottom:-0.2em">  </p>
-                             <div class="row">
-                             <div class="col"><strong>Category: </strong> <%=category[y].categoryName%></div>
-                             </div>
-                              </li>
-                               <%} %> 
-                            <li class="list-group-item nomlist1" >
-                              <a href="/users/category" style="text-decoration:none; color:black;font-weight:bold">... click for more</a>
-                            </li>
-                          </ul>  
+                         
                         </div>
                               
                       
                       <div class="col-sm-4 adiv"  id="awardsdiv" >
                           <h6> Our Judges</h6>
-    
+                          <a href="">    <img class="card-img-top" src="/images/judges.png" alt="Card image cap"></a>
+                          
                   </div>
                       </div>
                     </div>
@@ -231,23 +255,25 @@
   <div class="card p-3" style="background-color:#f4e6c2">
     <blockquote class="blockquote mb-0 ">
         <h6 class="card-title">in the news...</h6>
-      <p>Lorem ipsum dolor sit amet, ddddd consectetur adipiscing elit. Integer posuere erat a ante.</p>
-     
+  <!--    <p>Lorem ipsum dolor sit amet, ddddd consectetur adipiscing elit. Integer posuere erat a ante.</p>-->
+  <a href="">    <img class="card-img-top" src="/images/news.png" alt="Card image cap"></a>
+  
     </blockquote>
   </div>
 
   <div class="card  p-3" style="background-color:#f4e6c2">
     <blockquote class="blockquote mb-0">
         <h6 class="card-title">Events</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-      
+  <!--    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>-->
+  <a href="">    <img class="card-img-top" src="/images/event.png" alt="Card image cap"></a>
+  
     </blockquote>
   </div>
  
   <div class="card" style="background-color:#f4e6c2">
       <h6 class="card-title">&nbsp In Pictures</h6>
       
-    <img class="card-img" src="/images/logo.jpg" alt="Card image">
+    <img class="card-img" src="/images/pix.png" alt="Card image">
   </div>
  </div>
  
@@ -280,23 +306,6 @@
      
       <script type="text/javascript">
     
-    /***********************************************
-    * Book Flip slideshow script- (c) Ger Versluis 2003
-    * Permission granted to DynamicDrive.com to feature script
-    * This notice must stay intact for use
-    * Visit http://www.dynamicdrive.com/ for full source code
-    ***********************************************/
-    
-    /********************************************************
-      Create a div with transparent place holder in your html	
-      <div id="Book" style="position:relative">
-        <img src="placeholder.gif" width="144" height="227">
-      </div>
-      width = 2*book image width +4 height = book image height+2
-    
-      Insert onload in body tag
-        <body onload="ImageBook()">	
-    *********************************************************/
     
     // 7 variables to control behavior
       var Book_Image_Width=500;
@@ -311,12 +320,12 @@
     // If Link is not needed keep it ""
     
       Book_Image_Sources=new Array(
-        "/images/img.jpg", "",
-        "/images/img1.jpg","",
-        "/images/img2.jpg","",
-        "/images/img1.jpg","", //this slide isn't linked
-        "/images/img.jpg",
-        "/images/img2.jpg"// NOTE No comma after last line
+        "/images/gallery.png", "",
+        "/images/gallery1.png","",
+        "/images/gallery3.png","",
+        "/images/gallery.png","", //this slide isn't linked
+        "/images/gallery3.png",
+        "/images/gallery1.png"// NOTE No comma after last line
         );
     
     /***************** DO NOT EDIT BELOW **********************************/

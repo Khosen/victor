@@ -1,11 +1,11 @@
 const express = require('express'),
 app = express(),
  server = require('http').createServer(app);  
-port = process.env.PORT || 5000;
+port = process.env.PORT || 3000;
 const bodyParser = require ('body-parser');
 const path = require('path');
 //const config = require('./config')();
-const configdb= require('./config/database');
+//const configdb= require('./config/database');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
@@ -17,17 +17,17 @@ const flash= require('connect-flash');
 var urlencodedParser = bodyParser.urlencoded({ extended: true });
 
  //database
-mongoose.connect(configdb.database)
-let db = mongoose.connection;
+//mongoose.connect(configdb.database)
+//let db = mongoose.connection;
 
 //check connections
-db.once('open', function(){
-  console.log('Connected to Mongodb');
-});
+//db.once('open', function(){
+ // console.log('Connected to Mongodb');
+//});
 //check for db errors
-db.on('error', function(err){
-  console.log(err);
-});
+//db.on('error', function(err){
+ // console.log(err);
+//});
 
 //set template engine
 app.set('views', path.join(__dirname, 'views'));
@@ -107,11 +107,11 @@ app.get('*', function(req, res, next){
 
 //call all the routes
 let  routes= require('./routes/index');
-let users = require('./routes/users');
+let pages = require('./routes/pages');
 
 //let imgupload = require('./routes/upload');
 app.use('/', routes);
-app.use('/users', users);
+app.use('/pages', pages);
 
 
 
